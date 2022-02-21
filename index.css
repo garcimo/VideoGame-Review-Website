@@ -1,0 +1,249 @@
+body {
+    background-color: peachpuff;
+    font-family: Verdana, sans-serif;
+    font-size: 100%;
+    margin: 0px !important;
+}
+
+header {
+    color: #fdd8a3;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    background: url("Images/peach.gif") top left;
+    background-repeat: no-repeat;
+    background-color: #ba4c49;
+    background-size: contain;
+}
+
+#img1 {
+    float: left;
+    margin-right: 10px;
+}
+
+#img2 {
+    float: right;
+    margin-left: 10px;
+}
+
+#content table {
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content td, th {
+    border: 1px solid #CCC;
+    padding: 10px;
+    
+}
+
+#content th {
+    height: 50px;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+li {
+    padding: 0 10px;
+    padding-bottom: 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#navigation {
+    background-color: #f7e8e7;
+    
+}
+
+#content {
+    background-color: #e0907a;
+}
+
+#ads {
+    background-color: #f7e8e7;
+}
+
+#content h2 {
+    color: #f7e8e7;
+}
+
+#ads h2 {
+    color: #ba4c49;
+}
+
+h2 {
+    margin: 0 !important;
+}
+
+h3 {
+    margin: 0 !important;
+}
+
+p {
+    margin-top: 0 !important;
+}
+
+main {
+    background-color: purple;
+}
+
+footer {
+    text-align: center;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+/* /////////////// */
+
+@media screen and (min-width: 940px) {
+
+    body {
+        background-color: peachpuff;
+        background-image: url("Images/peachbg.jpg"); 
+        background-repeat: repeat; 
+        background-position: center 100px;
+    }
+
+    .container {
+        width: 80%;
+        margin: 10px auto !important;
+    }
+
+    .main-content {
+        width: 100%;
+        display: inline-flex;
+        align-items: stretch;
+        margin-top: 10px;
+    }
+    
+    /* left middle section */
+    #navigation {
+        font-size: 13px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        border: 2px solid #850009;
+    }
+    
+    #content {
+        margin: 0 10px;
+        min-height: 500px !important;
+        border: 2px solid #850009;
+        padding: 10px 10px;
+    }
+
+    #ads {
+        
+        min-height: 500px !important;
+        width: 20%;
+        padding: 10px 10px;
+        flex-shrink: 0;
+        border: 2px solid #850009;
+    }
+
+    #ads h2 {
+        font-size: 109%;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    a:link {
+        color: #850009;
+    }
+    a:visited { 
+        color: #444; 
+    }
+    a:focus { 
+        color: #850009; background-color: #fdd8a3; 
+    }
+    a:hover { 
+        color: #850009; background-color: #fdd8a3;  
+    } 
+    a:active { 
+        color: #850009; background-color: #fdd8a3; 
+    }
+
+}
+
+@media screen and (max-width: 939px) {
+    
+    .main-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* left middle section */
+    #navigation {
+        font-size: 13px;
+        border-top: 3px solid #850009;
+    }
+
+    #navigation ul {
+        display: flex;
+        align-items: center; 
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .item {
+        background-color: #fdd8a3;
+        display: flex;
+        flex: 1 0 50%;
+        justify-content: center;
+    }
+    
+    #content {
+        min-height: 500px !important;
+        padding: 10px 10px;
+        border-top: 3px solid #850009;
+    }
+
+    #ads {
+        min-height: 500px !important;
+        padding: 10px 10px;
+        border-top: 3px solid #850009;
+        border-bottom: 3px solid #850009;
+        
+    }
+
+    a {
+        text-decoration: none;
+    }
+    a:link {
+        color: #850009;
+    }
+    a:visited { 
+        color: #444; 
+    }
+    a:focus { 
+        color: #850009; background-color: #f7e8e7; 
+    }
+    a:hover { 
+        color: #850009; background-color: #f7e8e7;  
+    } 
+    a:active { 
+        color: #850009; background-color: #f7e8e7; 
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+}
